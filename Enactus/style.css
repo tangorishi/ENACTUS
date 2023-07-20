@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("newBackImg.png");
+    background-size: 1535px;
+    /* background-position: center top -150px; Adjust the value here to shift the image */
+}
+.logo {
+    bottom: 10px;
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+    mix-blend-mode: darken;
+    
+
+}
+.enactus-container {
+    position: absolute;
+    top: 250px;
+    left: 160px;
+    color: #4d0011;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    align-items: center;
+}
+
+.enactus-logo {
+    font-size: 130px;
+    font-weight: bold;
+    margin-right: 10px;
+    position: relative; /* Added relative positioning to enactus-logo */
+    
+
+}
+
+.university { 
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+ /* Text at the bottom right half of the screen */
+ .bottom-right-text {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    color: #4d0011;
+    font-family: 'Playfair Display', serif;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+.muj-logo {
+    width: 200px;
+    height: 58px;
+    position: absolute;
+    bottom: 10px;
+    left: 1299px; /* Adjusted to position on the top right */
+    z-index: 1; /* To ensure it appears above other elements */
+}
+/* Shadow to encatus in h1 tag */
+
+
+
+.container {
+    list-style: none;
+    position: absolute; /* Added absolute positioning to the container */
+    display: flex;
+  
+
+.nav-items {
+  margin-left: 40px;
+  margin-top: 34px;
+}
+/*.nav-items a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #4d0011;
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    transition: transform 0.2s ease, background-color 0.2s ease; 
+}
+
+.nav-items a:hover {
+    background-color: #ffff; 
+    transform: translateY(-5px); 
+}
+*/
+.nav-items a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: bold;
+    color: #4d0011;
+    padding: 8px 16px; /* Adding padding to create space around the text */
+    border-radius: 4px; /* Adding border-radius for rounded corners */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Adding transitions for smooth effect */
+    transform-style: preserve-3d; /* Ensures that the child elements maintain their 3D position */
+}
+
+.nav-items a:hover {
+    background-color: #fff; /* Change background color on hover */
+    transform: translateY(-5px) rotateX(10deg); /* Elevate and tilt the item on hover */
+   /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adding a subtle box-shadow for a floating effect */
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.nav-items .contact {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Added box-shadow for the elevated effect */
+    background-color: white; /* Added white background */
+    padding: 8px 16px; /* Added padding to create space around the text */
+}
+ /* Dropdown for teams Button */
+.dropdown {
+    position: relative;
+  }
+
+  .team-dropdown {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: bold;
+    color: #4d0011;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    transform-style: preserve-3d;
+  }
+
+  .team-dropdown:hover {
+    background-color: #fff;
+    transform: translateY(-5px) rotateX(10deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+   
+  }
+
+  /* Dropdown Content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    animation: slide-down 0.2s ease-in;
+  }
+
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* Style the dropdown links */
+  .dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #4d0011;
+   /* font-family: 'Roboto', sans-serif;*/
+   font-family: 'Playfair Display', serif;
+    transition: background-color 0.2s ease;
+  }
+  /* Dropdown for projects Button */
+
+  .projects-dropdown {
+    position: relative;
+  }
+
+  .projects-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+
+  .projects-dropdown:hover .projects-dropdown-content {
+    display: block;
+    animation: slide-down 0.2s ease-in;
+  }
+
+  /* Style the dropdown links for Projects */
+  .projects-dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #4d0011;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.2s ease;
+  }
+
+  .projects-dropdown-content a:hover {
+    background-color: #f9f9f9;
+    
+  }
+  
+
+
+
+  
