@@ -8,7 +8,9 @@ body {
     background-image: url("newBackImg.png");
     background-size: 1535px;
     /* background-position: center top -150px; Adjust the value here to shift the image */
+    background-repeat: no-repeat;
 }
+
 .logo {
     bottom: 10px;
     width: 80px;
@@ -43,19 +45,21 @@ body {
     font-weight: normal;
     margin-top: 10px;
 }
- /* Text at the bottom right half of the screen */
- .bottom-right-text {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 20px;
-    color: #4d0011;
-    font-family: 'Playfair Display', serif;
+.bottom-right-text {
+  position: fixed;
+  bottom: 50%;
+  right: 200px;
+  transform: translateY(50%);
+  font-size: xx-large;
+  padding: 20px;
+  color: #4d0011;
+  font-family: 'Playfair Display', serif;
 }
 
 .bold-text {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 .muj-logo {
     width: 200px;
     height: 58px;
@@ -207,6 +211,13 @@ body {
     background-color: #f9f9f9;
     
   }
+  
+
+
+
+
+
+
   
 
 
