@@ -216,7 +216,7 @@ a:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   }
   .more-info-section {
-    background-image: linear-gradient(rgba(247, 190, 2, 1), rgba(247, 190, 2, 0.561)), url("/assests/img/enactusworld.jpg");
+    background-image: linear-gradient(rgba(247, 190, 2, 1), rgba(247, 190, 2, 0.561)), url("../img/enactusworld.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
