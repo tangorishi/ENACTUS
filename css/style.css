@@ -241,29 +241,32 @@ a:hover {
 
 /*Carousal starts*/
 
-#testimonialid {
-  background-image: linear-gradient(rgba(91, 91, 91, 0.561), rgba(255, 246, 234, 0.561)) ,url("../img/testimonialback.jpg");
+/* #testimonialid {
+  background-image: linear-gradient(rgba(91, 91, 91, 0.561), rgba(255, 246, 234, 0.561)) ,url("../img/testimonialbg.jpeg");
   background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 6rem 0;
     overflow: hidden;
-}
+} */
 
 .carousel .card {
-  background-color: #fff6ea;
+  background: linear-gradient(90deg, rgba(240,235,124,1) 0%, rgba(255,234,234,1) 0%, rgba(241,128,128,1) 100%, rgba(228,236,39,1) 100%);
   color:var(--color-logo);
   transition: all 0.3s linear;
 }
 
+
 .carousel-inner .card:hover {
-  background-color: var(--color-body);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  transform: translateY(-10px);
 }
 
-.carousel-indicators {
-  bottom: -56px;
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: #000
 }
+/*Carousal ends*/
 
 .carousel-indicators [data-bs-target] {
   width: .7rem;
