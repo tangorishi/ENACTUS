@@ -1,0 +1,169 @@
+body {
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.events-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    margin-bottom: 1.5rem;
+}
+
+.event-title {
+    color: #f9e94f;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.event-date,
+.event-fee {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.register-button {
+    background: linear-gradient(to bottom right, #ffef86, #f9e94f);
+    border-color: #f9e94f;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background: linear-gradient(to bottom right, #f9e94f, #ffcc00);
+    border-color: #ffcc00;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.event-details {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #f9e94f;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.event-details.active {
+    opacity: 1;
+    height: auto;
+}
+
+.event-details p {
+    margin: 0;
+}
+
+/* Additional styling for the interactive elements */
+.register-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(249, 233, 79, 0.5);
+}
+
+/* Add hover effect for "Show Event Details" button */
+.show-details {
+    color: #ffcc00;
+    cursor: pointer;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.show-details:hover {
+    color: #ffdd66;
+}
+
+/* Add social media buttons */
+.social-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-button {
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-button.facebook {
+    background-image: url('path/to/facebook-icon.png');
+}
+
+.social-button.twitter {
+    background-image: url('path/to/twitter-icon.png');
+}
+
+.social-button.linkedin {
+    background-image: url('path/to/linkedin-icon.png');
+}
+
+.social-button:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .event-title {
+        font-size: 28px;
+    }
+
+    .event-date,
+    .event-fee,
+    .register-button,
+    .event-details {
+        font-size: 14px;
+    }
+
+    .event-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-title {
+        font-size: 24px;
+    }
+
+    .event-date,
+    .event-fee,
+    .register-button,
+    .event-details {
+        font-size: 12px;
+    }
+
+    .event-container {
+        padding: 1rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
