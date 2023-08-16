@@ -226,3 +226,19 @@ p {
   
   
   /*Footer ends*/
+
+	  @media (max-width: 767px) {
+	body {
+		overflow-x: hidden; 
+	  }
+	.attractive-footer {
+	  padding: 30px 0; 
+	  margin-bottom: 0;
+	}
+  
+	.attractive-footer h4 {
+	  font-size: 25px; 
+	}
+  
+	
+  }
