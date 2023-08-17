@@ -13,3 +13,8 @@ $(document).ready(function() {
         }
     });
 });
+
+// events js 
+function redirectToGoogleForms() {
+    window.open('https://forms.google.com', '_blank');
+}
